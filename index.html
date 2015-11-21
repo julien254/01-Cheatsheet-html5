@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+                <!-- COMMENTAIRE POUR HACHEMI: Je n'ai pas utiliser les balises sémantiques de code et de dfn dans mon
+                tableau car j'éstime qu'un tableau peut contenir toute type de données et donc le tableau est assez
+                sémantique en soit. -->
+<html lang="fr">
+                                <!-- HEAD -->
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"> <!-- MEDIA QUERIES -->
+    <link rel="stylesheet" href="dist/css/bootstrap.css"> <!-- CSS BOOTSTRAP -->
+    <link rel="stylesheet" href="css/style.css"> <!-- MY CSS -->
+    <title>Cheatsheet HTML5</title>
+    <link rel="icon" href="images/favicon.ico"/><!-- FAVICON -->
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+</head>
+                                 <!-- BODY -->
+<body>
+                                <!-- HEADER -->
+    <header>
+        <div class="container">
+
+            <div class="row">
+                <div class=" col-lg-4 col-md-12">
+                    <img id="logo" src="images/HTML5_Logo_512.png" alt="Logo html 5" />
+                </div>
+                <div class="col-lg-7 col-md-12 col-xs-12">
+                    <h1>Cheatsheet html5<br><small>Le b.a.-ba du codage</small></h1>
+                </div>
+            </div>
+        </div>
+    </header>
+                                <!-- NAV -->
+    <nav>                       <!-- NAV LG  -->
+        <ul class="nav nav-tabs hidden-xs hidden-sm hidden-md">
+            <li class="active navlg"><a data-toggle="tab" href="#principale">Balises principales</a></li>
+            <li class="navlg"><a data-toggle="tab" href="#semantique">Balises sémantiques</a></li>
+            <li class="navlg"><a data-toggle="tab" href="#listes">Balises de listes</a></li>
+            <li class="navlg"><a data-toggle="tab" href="#tableaux">Balises de tableaux</a></li>
+            <li class="navlg"><a data-toggle="tab" href="#form">Balises de formulaires</a></li>
+            <li class="navlg"><a data-toggle="tab" href="#medias">Balises de medias</a></li>
+            <li class="navlg"><a data-toggle="tab" href="#styles">Balises de style</a></li>
+        </ul>
+                            <!-- NAV SM AND MD -->
+        <ul class="nav nav-tabs hidden-xs hidden-lg">
+            <li class="hidden-xs hidden-lg navbalise">Les balises : </li>
+            <li class="active hidden-xs hidden-lg"><a data-toggle="tab" href="#principale">principales</a></li>
+            <li class="hidden-xs hidden-lg"><a data-toggle="tab" href="#semantique">sémantiques</a></li>
+            <li class="hidden-xs hidden-lg"><a data-toggle="tab" href="#listes">listes</a></li>
+            <li class="hidden-xs hidden-lg"><a data-toggle="tab" href="#tableaux">tableaux</a></li>
+            <li class="hidden-xs hidden-lg"><a data-toggle="tab" href="#form">formulaires</a></li>
+            <li class="hidden-xs hidden-lg"><a data-toggle="tab" href="#medias">medias</a></li>
+            <li class="hidden-xs hidden-lg"><a data-toggle="tab" href="#styles">styles</a></li>
+        </ul>
+                                <!-- NAV XS -->
+        <ul class="nav nav-tabs hidden-sm hidden-md hidden-lg">
+            <li class="dropdown active visible-xs pull-right">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span></button>
+                <ul id="menu" class="dropdown-menu dropdown-menu-right">
+                    <li class="active"><a data-toggle="tab" href="#principale">Balises principales</a></li>
+                    <li><a data-toggle="tab" href="#semantique">Balises sémantiques</a></li>
+                    <li><a data-toggle="tab" href="#listes">Balises de listes</a></li>
+                    <li><a data-toggle="tab" href="#tableaux">Balises de tableaux</a></li>
+                    <li><a data-toggle="tab" href="#form">Balises de formulaires</a></li>
+                    <li><a data-toggle="tab" href="#medias">Balises de medias</a></li>
+                    <li><a data-toggle="tab" href="#styles">Balises de style</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+                                <!-- SECTION -->
+    <section>
+        <div class="tab-content">
+                                <!-- SECTION PRINCIPAL TAG -->
+            <div id="principale" class="tab-pane fade in active">
+                <h2 class="text-center">Les balises principales</h2>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Balises</th>
+                            <th>Définitions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="balise ">&lt;<span>!--...--</span>&gt;</td>
+                            <td>Définit un commentaire.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>!DOCTYPE</span>&gt;</td>
+                            <td>Définit le type de document.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>a</span>&gt;</td>
+                            <td>Définit un hyperliens.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>base</span>&gt;</td>
+                            <td>Déclare un chemin absolu qui sera utilisé comme référence pour toutes les autres url présentes dans le document.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>body</span>&gt;</td>
+                            <td>Définit le corp du document.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>br</span>&gt;</td>
+                            <td>Inserer un retour a la ligne.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>div</span>&gt;</td>
+                            <td>Divise la page en section.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>h1</span>&gt; to &lt;<span>h6</span>&gt;</td>
+                            <td>Balises de titre de niveau 1 à 6.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>head</span>&gt;</td>
+                            <td>Définit les informations à propos du document.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>hr</span>&gt;</td>
+                            <td>Trace une ligne le long de la page.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>html</span>&gt;</td>
+                            <td>Début du documents html.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>link</span>&gt;</td>
+                            <td>Définit la relation entre un lien et une ressource.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>meta</span>&gt;</td>
+                            <td>Définir des métadonnées.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>noscript</span>&gt;</td>
+                            <td>Défini une section de code HTML qui doit être insérée si l'un des scripts de la page n'est pas pris en charge ou encore si les scripts ont été désactivés par défaut dans le navigateur.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>p</span>&gt;</td>
+                            <td>Définit un paragraphe.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>script</span>&gt;</td>
+                            <td>Inserer un script.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>span</span>&gt;</td>
+                            <td>Changer le style d'un bout de texte.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>title</span>&gt;</td>
+                            <td>Définit un titre au document(dans le head).</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+                                <!-- SECTION SEMANTICS TAG -->
+            <div id="semantique" class="tab-pane fade">
+                <h2 class="text-center">Les balises sémantiques</h2>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Balises</th>
+                            <th>Définitions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="balise">&lt;<span>abbr</span>&gt;</td>
+                            <td>Abbréviation ou acronyme.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>address</span>&gt;</td>
+                            <td>Adresse webmaster.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>article</span>&gt;</td>
+                            <td>Définit un article.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>aside</span>&gt;</td>
+                            <td>Bloque de contenu sur le coté de la page.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>blockquote</span>&gt;</td>
+                            <td>Citation.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>cite</span>&gt;</td>
+                            <td>Définit un titre pour une oeuvre.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>details</span>&gt;</td>
+                            <td>Définit des détails supplémentaires que l'utilisateur peut afficher ou masquer.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>dialog</span>&gt;</td>
+                            <td>Boite de dialogue.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>dfn</span>&gt;</td>
+                            <td>Définition.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>footer</span>&gt;</td>
+                            <td>Section en pied de page.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>header</span>&gt;</td>
+                            <td>Section d'en-tete de la page.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>main</span>&gt;</td>
+                            <td>Contenu principal d'un document.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>nav</span>&gt;</td>
+                            <td>Barre de navigation.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>q</span>&gt;</td>
+                            <td>Citation courte.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>s</span>&gt;</td>
+                            <td>Définit un texte correcte.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>section</span>&gt;</td>
+                            <td>Creer une section dans la page.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>small</span>&gt;</td>
+                            <td>Petit texte.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>summary</span>&gt;</td>
+                            <td>Intitulé de la balise "détails".</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>time</span>&gt;</td>
+                            <td>Définit une date et une heure.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+                                <!-- SECTION LIST TAG -->
+            <div id="listes" class="tab-pane fade">
+                <h2 class="text-center">Les balises de listes</h2>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Balises</th>
+                            <th>Définitions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="balise">&lt;<span>dd</span>&gt;</td>
+                            <td>Définit un description dans une liste de description.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>dl</span>&gt;</td>
+                            <td>Liste de description.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>dt</span>&gt;</td>
+                            <td>Terme a decrire dans une liste de description.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>li</span>&gt;</td>
+                            <td>Elements de liste.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>menu</span>&gt;</td>
+                            <td>Liste/menu de commande.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>menuitem</span>&gt;</td>
+                            <td>Définit un élément de commande/Menu que l'utilisateur peut appeler à partir d'un menu contextuel.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>ol</span>&gt;</td>
+                            <td>Début de liste ordonnée.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>ul</span>&gt;</td>
+                            <td>Début de liste non ordonnée.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+                                <!-- SECTION TABLE TAG -->
+            <div id="tableaux" class="tab-pane fade">
+                <h2 class="text-center">Les balises de tableaux</h2>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Balises</th>
+                            <th>Définitions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="balise">&lt;<span>caption</span>&gt;</td>
+                            <td>Légende de tableaux.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>col</span>&gt;</td>
+                            <td>Spécifie les propriétés de chaque colonne dans un élément "colgroup".</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>colgroup</span>&gt;</td>
+                            <td>Permet de faire un groupe de colonne d'un tableau pour leurs assigner les mêmes propriétées.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>table</span>&gt;</td>
+                            <td>Début d'un tableau.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>tbody</span>&gt;</td>
+                            <td>Corp du tableau.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>td</span>&gt;</td>
+                            <td>Creer une cellule dans le tableau.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>tfoot</span>&gt;</td>
+                            <td>Pied du tableau.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>th</span>&gt;</td>
+                            <td>Creer un cellule dans l'en-tete du tableau.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>thead</span>&gt;</td>
+                            <td>En-tete du tableau.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>tr</span>&gt;</td>
+                            <td>Ajoute une ligne au tableau.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+                                <!-- SECTION FORM TAG -->
+            <div id="form" class="tab-pane fade">
+                <h2 class="text-center">Les balises de formulaires</h2>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Balises</th>
+                            <th>Définitions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="balise">&lt;<span>button</span>&gt;</td>
+                            <td>Boutton cliquable.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>datalist</span>&gt;</td>
+                            <td>Liste d'option prédéfinit pour la balise "input".</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>fieldset</span>&gt;</td>
+                            <td>Encadrer plusieurs éléments de formulaire.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>form</span>&gt;</td>
+                            <td>Définit un formulaire HTML.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>input</span>&gt;</td>
+                            <td>Définit les controles utilisé dans un formulaire.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>keygen</span>&gt;</td>
+                            <td>Champ de générateur de paire de clés.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>label</span>&gt;</td>
+                            <td>Etiquettes pour la balise "input".</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>legend</span>&gt;</td>
+                            <td>Légende pour la balise "fieldset".</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>optgroup</span>&gt;</td>
+                            <td>Définit un groupe d'options associés dans une liste déroulante.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>option</span>&gt;</td>
+                            <td>Options des listes déroulantes.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>output</span>&gt;</td>
+                            <td>Définit le resultat d'un calcule.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>select</span>&gt;</td>
+                            <td>Liste deroulante.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>textarea</span>&gt;</td>
+                            <td>Définit un contrôle d'entrée multi-lignes (zone de texte).</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+                                    <!-- SECTION MEDIA TAG -->
+            <div id="medias" class="tab-pane fade">
+                <h2 class="text-center">Les balises de médias</h2>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Balises</th>
+                            <th>Définitions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="balise">&lt;<span>area</span>&gt;</td>
+                            <td>Définit une zone a l'interieur d'une image-map.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>audio</span>&gt;</td>
+                            <td>Contenu audio.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>canvas</span>&gt;</td>
+                            <td>Utilisé pour dessiner des graphiques, à la volée, par l'intermédiaire de scripts (habituellement JavaScript).</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>figcaption</span>&gt;</td>
+                            <td>Légende pour la balise "figure".</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>figure</span>&gt;</td>
+                            <td>Contenu autonome.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>img</span>&gt;</td>
+                            <td>Inserer une image.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>source</span>&gt;</td>
+                            <td>Définit des alternatives de format aux différents medias.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>track</span>&gt;</td>
+                            <td>Inserer du texte dans les medias. (sous-titres, titres, ect...).</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>video</span>&gt;</td>
+                            <td>Inserer une video.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+                                <!-- SECTION STYLE TAG -->
+            <div id="styles" class="tab-pane fade">
+                <h2 class="text-center">Les balises de styles</h2>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Balises</th>
+                            <th>Définitions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="balise">&lt;<span>b</span>&gt;</td>
+                            <td>Texte en gras.(Déconseillé)</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>del</span>&gt;</td>
+                            <td>Texte qui a été supprimé du document mais que vous voulais garder visible.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>em</span>&gt;</td>
+                            <td>Mots/texte important(moin important que la balise "strong").</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>ins</span>&gt;</td>
+                            <td>Texte insérer dans le document.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>mark</span>&gt;</td>
+                            <td>Surlignée.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>style</span>&gt;</td>
+                            <td>Inserer du style dans le documents html(Déconseillé.)</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>strong</span>&gt;</td>
+                            <td>Texte important.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>sub</span>&gt;</td>
+                            <td>Texte indicé.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>sup</span>&gt;</td>
+                            <td>Texte exposant.</td>
+                        </tr>
+                        <tr>
+                            <td class="balise">&lt;<span>u</span>&gt;</td>
+                            <td>Définit le texte qui devrait être stylistiquement différent du texte normal.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+                                <!-- SCRIPT JAVA BOOTSTRAP -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+
+</html>

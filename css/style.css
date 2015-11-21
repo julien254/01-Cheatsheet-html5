@@ -1,0 +1,156 @@
+                        /* CSS FOR ALL PAGE */
+
+
+                        /* GENERAL HEADER */
+header {
+    background-color: rgb(228, 88, 9);
+    text-align: center;
+}
+
+h1 {
+    font-family: 'gueules_de_loupregular';
+    text-align: center;
+}
+
+h1 small {
+    color: white;
+}
+                        /* GENERAL NAV */
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+    color: #fff;
+    cursor: default;
+    background-color: rgb(228, 88, 9);
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+}
+                        /* GENERAL SECTION */
+h2 {
+    font-family: 'New Century Schoolbook', serif;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.balise {
+    background-color: #262d33;
+    border-radius: 1em;
+    text-align: center;
+    color: white;
+    vertical-align: middle!important;
+}
+
+td span {
+    color: #d74b4b;
+}
+                    /* GENERAL PERSONAL FONT-FAMILY */
+@font-face {
+    font-family: 'gueules_de_loupregular';
+    src: url('../font-family/gueules_de_loup-webfont.eot');
+    src: url('../font-family/gueules_de_loup-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font-family/gueules_de_loup-webfont.woff2') format('woff2'),
+         url('../font-family/gueules_de_loup-webfont.woff') format('woff'),
+         url('../font-family/gueules_de_loup-webfont.ttf') format('truetype'),
+         url('../font-family/gueules_de_loup-webfont.svg#gueules_de_loupregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*//////////////////////////////// CSS FOR SIZE LG ///////////////////////////////*/
+
+@media screen and (min-width: 1200px) {
+                       /* HEADER LG */
+h1 {
+    font-size: 6em;
+    margin-top: 0.7em;
+}
+
+#logo {
+    height: 20em;
+    width: 20em;
+    padding: 2em;
+}
+                        /* NAV LG */
+.navlg {
+    position: relative;
+    left: 5em;
+}
+                        /* SECTION LG */
+section {
+    padding: 0 5em!important;
+}
+
+h2 {
+    padding: 1em;
+}
+
+}
+
+/*//////////////////////////////// CSS FOR SIZE MD AND SM ///////////////////////////////*/
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+                        /* HEADER MD AND SM */
+h1 {
+    font-size: 5em;
+}
+
+#logo {
+    height: 15em;
+    width: 15em;
+    padding-top: 2em;
+}
+                        /* NAV MD AND SM */
+.navbalise {
+    background-color: rgb(97, 97, 97);
+    color: white;
+    padding: 11px 8px;
+}
+                        /* SECTION MD AND SM */
+section {
+    padding: 0 3em!important;
+}
+
+h2 {
+    padding: 0.7em;
+}
+
+
+}
+
+/*//////////////////////////////// CSS FOR SIZE XS ///////////////////////////////*/
+
+@media screen and (max-width: 767px) {
+                        /* HEADER XS */
+h1 {
+    font-size: 4em;
+}
+
+#logo {
+    display: none;
+}
+                        /* NAV XS */
+a {
+    color: rgb(97, 97, 97);   /* COLOR BUTTON MENU */
+}
+
+#menu li.active > a,
+#menu li.active > a:hover,
+#menu li.active > a:focus {
+    color: #fff;
+    cursor: default;
+    background-color: rgb(228, 88, 9);
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+}
+                        /* SECTION XS */
+section {
+    padding: 0 1em!important;
+}
+
+h2 {
+    padding: 0.7em;
+    font-size: 1.5em;
+}
+
+}
