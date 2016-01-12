@@ -2,26 +2,36 @@
                 <!-- COMMENTAIRE POUR HACHEMI: Je n'ai pas utiliser les balises sémantiques de code et de dfn dans mon
                 tableau car j'éstime qu'un tableau peut contenir toute type de données et donc le tableau est assez
                 sémantique en soit. -->
-<html lang="fr">
+<html class="no-js" lang="fr">
                                 <!-- HEAD -->
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge"> <!-- Compatibility IE -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"> <!-- MEDIA QUERIES -->
-    <link rel="stylesheet" href="dist/css/bootstrap.css"> <!-- CSS BOOTSTRAP -->
-    <link rel="stylesheet" href="css/style.css"> <!-- MY CSS -->
+    <meta name="description" content="Cheatsheet html 5"> <!-- SITE DESCRIPTION -->
+
     <title>Cheatsheet HTML5</title>
-    <link rel="icon" href="images/favicon.ico"/><!-- FAVICON -->
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <link rel="icon" href="favicon.ico"/><!-- FAVICON -->
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/normalize.css"> <!-- CSS NORMALIZE -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"> <!-- CSS BOOTSTRAP -->
+    <link rel="stylesheet" href="css/style.css"> <!-- MY CSS -->
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script> <!-- LIBRARY JS -->
 </head>
                                  <!-- BODY -->
 <body>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
                                 <!-- HEADER -->
     <header>
         <div class="container">
-
             <div class="row">
                 <div class=" col-lg-4 col-md-12">
-                    <img id="logo" src="images/HTML5_Logo_512.png" alt="Logo html 5" />
+                    <img id="logo" src="img/HTML5_Logo_512.png" alt="Logo html 5" />
                 </div>
                 <div class="col-lg-7 col-md-12 col-xs-12">
                     <h1>Cheatsheet html5<br><small>Le b.a.-ba du codage</small></h1>
@@ -519,9 +529,27 @@
             </div>
         </div>
     </section>
-                                <!-- SCRIPT JAVA BOOTSTRAP -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+            <!-- SCRIPT BOOTSTRAP -->
+    <script src="js/vendor/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
+            <!-- SCRIPT BOILERPLATE -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+    </script>
+
+
 </body>
 
 </html>
